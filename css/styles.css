@@ -184,8 +184,10 @@ address {
   display: flex;
 }
 .why-icon{
-  display: block;
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
   margin-bottom: 30px;
   background: var(--portfolo-button);
   border-radius: 4px;
@@ -273,28 +275,28 @@ address {
 .icons-list li:not(:last-child) {
   margin-right: 10px;
 }
-.icons-list li{
-  width: 44px;
-  height: 44px;   
-  border-radius: 50%;
+
+.first-list {
   display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  fill: var(--color-icon);
+
 }
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
-  fill: var(--color-w);
+  fill: var(--color-w); 
 }
 /*client section*/
 .client-list{
   display: flex;
   justify-content: space-between;
 }
-.clients .client{
-  fill: var(--color-icon);
-}
-.client{
+.x{
   max-width: 170px; 
   border: 1px solid var(--color-icon);
   box-sizing: border-box;
@@ -303,6 +305,15 @@ address {
 }
 .client:not(:last-child){
   margin-right: 30px;
+}
+.client{
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+  fill: var(--color-icon);
 }
 .client:hover,
 .client:focus {
@@ -340,14 +351,20 @@ address {
 .connect .title{
   margin-bottom: 20px;
 }
-.connect .first-list{
-  background:  rgba(255, 255, 255, 0.1);
+.footer-icons {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
   fill: var(--color-w);
 }
-.connect .first-list:hover,
-.connect .first-list:focus {
+.footer-icons:hover,
+.footer-icons:focus {
   background: var(--color-link);
-  fill: var(--color-w);
+  fill: currentColor;
 }
 /*portfolio main*/
 .examples {
@@ -359,30 +376,37 @@ address {
 }
 .examples-item {
   /*це наш item*/
+  cursor: pointer;
   margin-left: 30px;
   margin-top: 30px; /*
   flex-basis: cacl((1200- 90px)/3); */
 }
-.examples-item:hover{
-  cursor: pointer;
+
+.examples-item a:focus,
+.examples-item a:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.examples-item img {
+.examples-item a{
+  display: block;
+}
+.port-img{
   display: block;
 }
 .discription {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
+
 .examples > li {
   width: 370px;
-  border: 1px solid #eeeeee;
 }
 .title-examples {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   margin-bottom: 4px;
 }
 .text-examples {
