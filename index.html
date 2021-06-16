@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
@@ -43,8 +43,9 @@
             <h1 class="banner-text">
                 Эффективные решения для вашего бизнеса
             </h1>
-            <button class="button" type="button">Заказать услугу</button>
+            <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
+        
         </section>
         <section class="section">
             <div class="container">
@@ -106,13 +107,22 @@
             <h2 class="title-work">Чем мы занимаемся</h2>
             <ul class="title-img">
                 <li class="images">
+                    <div class="label">
                     <img src="images/box1.jpg" alt="розробка" width="370" />
+                    <h3 class="title">десктопные приложения</h3>
+                </div>
                 </li>
                 <li class="images">
+                    <div class="label">
                     <img src="images/box3.jpg" alt="оптимізація" width="370" />
+                    <h3 class="title">Мобильные приложения</h3>
+                </div>
                 </li>
                 <li class="images">
+                    <div class="label">
                     <img src="images/box2.jpg" alt="дизайн" width="370" />
+                    <h3 class="title">Дизайнерские решения</h3>
+                    </div>
                 </li>
             </ul>
             </div>
@@ -315,7 +325,7 @@
                     <li>
                         <a class="client" href="#">
                             <svg  width="106px" height="60px">
-                               <use href="./images/sprite.svg#icon-client6"></use>
+                                <use href="./images/sprite.svg#icon-client6"></use>
                             </svg>
                         </a>
                     </li>   
@@ -325,23 +335,23 @@
     </main>
     <footer class="footer">
         <div class="container ">
-        <div class="container-adress">
-        <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
-        <address class="adress">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="adress-contacts">
-                <li><a class="link lin" href="mailto:info@example.com">info@example.com</a></li>
-                <li><a class="link lin" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
-        </address>
-        </div>
-        <div class="connect">
-        <h2 class="title">присоединяйтесь</h2>
-        <ul class="icons-list">
-            <li class="">
-                <a class="footer-icons" href="#">
-                    <svg class="icon" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-instagram"></use>
+            <div class="container-adress">
+                <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+                <address class="adress">
+                    <p>г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="adress-contacts">
+                        <li><a class="link lin" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="link lin" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="connect">
+                <h2 class="title">присоединяйтесь</h2>
+                <ul class="icons-list">
+                    <li class="">
+                        <a class="footer-icons" href="#">
+                            <svg class="icon" width="20px" height="20px">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
                 </a>
             </li>
@@ -350,26 +360,39 @@
                     <svg class="icon" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                      </svg>
+                    </a>
+                </li>
+                <li class="">
+                    <a class="footer-icons" href="#">
+                        <svg class="icon" width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-facebook"></use>
+                        </svg>
                  </a>
-             </li>
-            <li class="">
-                 <a class="footer-icons" href="#">
-                    <svg class="icon" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-facebook"></use>
+                </li>
+                <li class="">
+                    <a class="footer-icons" href="#">
+                        <svg class="icon" width="20px" height="20px">
+                            <use href="./images/sprite.svg#icon-linkedin"></use>
                      </svg>
-                 </a>
-            </li>
-            <li class="">
-                 <a class="footer-icons" href="#">
-                    <svg class="icon" width="20px" height="20px">
-                        <use href="./images/sprite.svg#icon-linkedin"></use>
-                     </svg>
-                 </a>
-            </li>
-        </ul>
+                    </a>
+                </li>
+            </ul>
         </div>
-        </div>
-    </footer>
+    </div>
+</footer>
+<!--
+    
+-->
+<div data-modal class="backdrop">
+    <div class="modal">
+        <button data-modal-close class="close">
+            <svg width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+<script src="./modal.js"></script>
 </body>
 
 </html>
