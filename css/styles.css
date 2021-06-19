@@ -80,6 +80,8 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .link.current{
   color: var(--color-link); 
@@ -110,12 +112,13 @@ address {
 .link:focus {
   color: var(--color-link);
   fill: var(--color-link);
+
 }
-.link:active {
-  color: red;
-}
+
 .links {
   color: var(--color-text);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /*main*/
@@ -158,13 +161,14 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   display: block;
   text-align: center;
+  transition: border-radius,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus{
   color:var(--color-w);
   background-color: rgba(24, 140, 232, 1);
   border-radius: 0px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-radius,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 /* buttons portfolio*/
@@ -326,12 +330,14 @@ address {
   justify-content: center;
   align-items: center;
   fill: var(--color-icon);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .first-list:hover,
 .first-list:focus {
   background: var(--color-link);
   fill: var(--color-w);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 }
 /*client section*/
@@ -351,11 +357,13 @@ address {
   border: 1px solid var(--color-icon);
   border-radius: 4px;
   fill: var(--color-icon);
+  transition: fill,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client:hover,
 .client:focus {
   border-color: var(--color-link);
   fill: var(--color-link);
+  transition: fill,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*client section*/
 /*footer*/
@@ -397,12 +405,13 @@ address {
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
   fill: var(--color-w);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons:hover,
 .footer-icons:focus {
   background: var(--color-link);
   fill: currentColor;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 /*portfolio main*/
