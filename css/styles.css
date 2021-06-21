@@ -39,7 +39,7 @@ address {
 .social-links {
   display: flex;
   margin-left: 93px;
-  color: var(--color-text);
+  color: var(--color);
 }
 
 .social-links .item:not(:last-child) {
@@ -387,6 +387,7 @@ font-weight: 500;
 }
 .footer .container{
   display: flex;
+  align-items: baseline;
 }
 .adress p {
   margin-top: 20px;
@@ -399,7 +400,6 @@ font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
 }
 .connect{
-  margin-top: 12px;
   margin-left: 70px;
 }
 .connect .title{
@@ -508,7 +508,7 @@ font-weight: 500;
   opacity: 1;
   visibility:visible;  
 
-  transition-property: opacity;
+  transition-property: opacity,visibility ;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
